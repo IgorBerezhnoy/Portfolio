@@ -1,0 +1,36 @@
+.header {
+  height: 70px;
+  background: #041F31;
+  padding: 10px;
+  
+  &__nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  &__right {
+	display: flex;
+	align-items: center;
+  }
+  
+  a {
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+  }
+  
+  &__main:hover, &__projects:hover {
+	color: #BDEBEA;
+  }
+  
+  &__main {
+	color: #BDEBEA;
+  }
+  
+  &__projects {
+	color: #BDEBEA;
+	margin-right: 87px;
+  }
+  
+}

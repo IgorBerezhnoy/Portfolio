@@ -1,0 +1,16 @@
+.button {
+  &-link:hover {
+	text-decoration: none;
+  }
+  
+  &-link {
+	border: none;
+	display: block;
+	padding: 10px;
+	background: $mainColor;
+	border-radius: 6px;
+	color: #252728;
+  }
+  
+  
+}
