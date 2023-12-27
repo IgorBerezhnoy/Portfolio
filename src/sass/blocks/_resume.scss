@@ -14,4 +14,54 @@
 	  background: linear-gradient(90deg, #0ada92 0, #049eb2 100%);
 	}
   }
+  
+  &__wrapper {
+	padding: 60px 65px 0 65px;
+	display: grid;
+	gap: 135px;
+	grid-template-columns:repeat(2, 425px);
+  }
+  
+  &__column {
+	&-title {
+	  position: relative;
+	  
+	  &:before {
+		position: absolute;
+		content: "";
+		width: 15px;
+		height: 15px;
+		background: $mainColor;
+		border-radius: 100%;
+		left: -30px;
+		top: 50%;
+		transform: translateY(-50%);
+	  }
+	}
+	
+	ul {
+	  list-style-type: none;
+	  
+	  li {
+		position: relative;
+		
+		&:after {
+		  content: "";
+		  width: 1px;
+		  height: 100%;
+		  position: absolute;
+		  top: -16px;
+		  left: -23px;
+		  z-index: -2;
+		  background: white;
+		}
+	  }
+	}
+  }
+  
+  &__item {
+	&-head {
+	
+	}
+  }
 }
