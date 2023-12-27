@@ -2,24 +2,36 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 60px;
+  
   &_fz14 {
 	font-size: 14px;
 	line-height: 21px;
   }
+  
   &_fz16 {
 	font-size: 16px;
 	line-height: 24px;
   }
+  
   &_fz36 {
 	font-size: 36px;
   }
+  
   &_fz48 {
 	font-size: 48px;
   }
+  
   &_circle {
 	position: relative;
 	padding-left: 10px;
 	z-index: 2;
 	@include before_circle;
+  }
+  
+  &__divider {
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: $mainColor;
   }
 }

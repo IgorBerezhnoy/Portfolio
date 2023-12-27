@@ -22,18 +22,13 @@
 	color: $typography;
   }
   
-  &__divider {
-	display: block;
-	width: 60px;
-	height: 2px;
-	background: $mainColor;
-  }
   
   &__skills {
 	&-info {
 	  margin-left: 20px;
 	  
 	}
+	
 	&-title {
 	  font-weight: 700;
 	  font-size: 14px;
@@ -52,6 +47,11 @@
 	  padding-left: 10px;
 	  z-index: 2;
 	  @include before_circle;
+	  
+	  img {
+		max-width: 30px;
+		max-height: 30px;
+	  }
 	  
 	  &:before {
 		top: -54%;
