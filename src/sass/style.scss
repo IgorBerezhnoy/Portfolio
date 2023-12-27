@@ -8,7 +8,7 @@
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  color: #BDEBEA;
+  color: $typography;
 }
 
 .container {
@@ -16,8 +16,15 @@
   margin: 0 auto;
 }
 
+body {
+  background: #041F31;
+
+}
+
 @import "blocks/title";
 @import "blocks/header";
 @import "blocks/buttons";
 @import "blocks/promo";
 @import "blocks/sidepanel__link";
+@import "blocks/menu";
+@import "blocks/aboutMe";

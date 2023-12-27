@@ -4,6 +4,7 @@
   min-height: 100vh;
   background: url("../../img/main_bg.png") center (center/cover) no-repeat;
   padding: 350px 0 250px 30px;
+  position: relative;
   
   &_wrapper {
 	max-width: 675px;
@@ -16,18 +17,13 @@
   }
   
   &__link:hover {
-	color: #BDEBEA;
+	color: $typography;
   }
   
   &__link {
-	color: #BDEBEA;
+	color: $typography;
 	margin-left: 44px;
   }
   
-  &__subtitle {
-	position: relative;
-	padding-left: 10px;
-	z-index: 2;
-	@include before_circle;
-  }
+  
 }
