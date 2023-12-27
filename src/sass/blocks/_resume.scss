@@ -1,0 +1,17 @@
+.resume {
+  min-height: 680px;
+  padding: 120px 0 0 0;
+  
+  &__header {
+	position: relative;
+	text-align: center;
+  }
+  
+  &__title {
+	&:before {
+	  top: -25%;
+	  left: 49%;
+	  background: linear-gradient(90deg, #0ada92 0, #049eb2 100%);
+	}
+  }
+}

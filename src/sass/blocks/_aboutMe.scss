@@ -1,10 +1,10 @@
 .aboutMe {
-  min-height: 1160px;
+  min-height: 720px;
   padding: 120px 0 0 0;
   
   &__img {
-	height: 600px;
-	width: 400px;
+	max-height: 600px;
+	max-width: 400px;
 	display: block;
   }
   
