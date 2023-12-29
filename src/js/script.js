@@ -30,8 +30,6 @@ projectsImg.forEach((el, i) => {
 
 projectsImg.forEach((el, i) => {
   el.addEventListener('mouseleave', () => {
-    setTimeout(()=>{
       projectsButton[i].style.display = 'none';
-    },400)
   });
 });

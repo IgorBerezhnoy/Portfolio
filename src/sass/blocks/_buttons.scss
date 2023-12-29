@@ -1,4 +1,10 @@
 .button {
+  border: none;
+  display: block;
+  padding: 10px;
+  background: $mainColor;
+  border-radius: 6px;
+  color: #252728;
   &-link:hover {
 	text-decoration: none;
   }
