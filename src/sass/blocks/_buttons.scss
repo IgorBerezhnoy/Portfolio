@@ -12,5 +12,19 @@
 	color: #252728;
   }
   
+  &-transparent {
+	margin-top: 10px;
+	border-radius: 5px;
+	color: $typography;
+	border: 2px solid $typography;
+	background: transparent;
+	
+	&:hover {
+	  color: $typography;
+	  
+	  text-decoration: underline;
+	  
+	}
+  }
   
 }
