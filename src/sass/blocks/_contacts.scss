@@ -1,0 +1,25 @@
+.contacts {
+  min-height: 720px;
+  padding: 140px 0 0 0;
+  
+  &__wrapper {
+	display: grid;
+	grid-template-columns: 400px 570px;
+	gap: 70px;
+  }
+  
+  &__img {
+	max-height: 600px;
+	max-width: 400px;
+	display: block;
+  }
+  
+  
+  &__text {
+	margin-top: 20px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color: $typography;
+  }
+}
