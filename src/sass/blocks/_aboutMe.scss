@@ -6,6 +6,10 @@
 	max-height: 600px;
 	max-width: 400px;
 	display: block;
+	
+	&_mobile {
+	  display: none;
+	}
   }
   
   &__wrapper {
