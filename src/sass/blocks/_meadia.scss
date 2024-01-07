@@ -29,6 +29,13 @@
 	  grid-template-columns: repeat(2, 255px)
 	}
   }
+  .resume {
+	&__wrapper {
+	  margin: 0 auto;
+	  padding: 60px 0 0 35px;
+	  gap: 70px;
+	}
+  }
 }
 
 @media (max-width: 992px) {
@@ -55,7 +62,15 @@
 	  margin-top: 10px;
 	}
   }
-  
+  .resume {
+	padding: 80px 0 0 0;
+	
+	&__wrapper {
+	  padding: 40px 0 0 35px;
+	  grid-template-columns:1fr;
+	  gap: 40px;
+	}
+  }
 }
 
 
@@ -89,6 +104,19 @@
 	
 	&__skills-items {
 	  grid-template-columns: 100%;
+	}
+  }
+  .skills {
+	padding-top: 80px;
+	
+	&__item {
+	  text-align: center;
+	  margin: 0 30px 30px 30px;
+	  width: 100px;
+	  
+	  img {
+		width: 90px;
+	  }
 	}
   }
 }
@@ -125,6 +153,26 @@
   .hamburger {
 	right: 20px;
   }
+  .resume {
+	padding: 40px 0 0 0;
+  }
+  .skills {
+	padding-top: 40px;
+	
+	&__item {
+	  text-align: center;
+	  margin: 0 20px 20px 20px;
+	  width: 90px;
+	  
+	  &-title {
+		font-size: 14px;
+	  }
+	  
+	  img {
+		width: 80px;
+	  }
+	}
+  }
 }
 
 @media (max-width: 425px) {
@@ -141,7 +189,13 @@
 	  margin-right: 50px;
 	}
   }
-  
+  .title {
+	&_fz36 {
+	  margin-top: 14px;
+	  font-size: 27px;
+	  line-height: 40px;
+	}
+  }
 }
 
 @media (max-width: 375px) {

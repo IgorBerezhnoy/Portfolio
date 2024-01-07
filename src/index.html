@@ -145,8 +145,17 @@
 <section class="aboutMe">
   <div class="container">
     <div class="aboutMe__wrapper">
-      <img src="img/main_photo.png" class="aboutMe__img aboutMe__img_desktop" alt="main_photo">
-      <img src="img/main_photo_mobile.png" class="aboutMe__img aboutMe__img_mobile" alt="main_photo">
+
+
+      <picture>
+        <source media="(max-width: 576px)" srcset="img/main_photo_mobile.png" >
+        <source media="(min-width: 577px)" srcset="img/main_photo.png" >
+        <img src="img/main_photo.png"  alt="main_photo" class="aboutMe__img">
+      </picture>
+
+<!--      <img src="img/main_photo.png" class="aboutMe__img aboutMe__img_desktop" alt="main_photo">-->
+<!--      <img src="img/main_photo_mobile.png"-->
+<!--           class="aboutMe__img aboutMe__img_mobile" alt="main_photo">-->
       <div class="aboutMe_all-info">
         <div class="title title_fz16 title_circle">Про меня</div>
         <h2 class="title title_fz36">Меня зовут Игорь</h2>
@@ -261,149 +270,149 @@
     </div>
   </div>
 </section>
-<!--<section class="resume">-->
-<!--  <div class="container">-->
-<!--    <div class="resume__header">-->
-<!--      <div class="title title_fz16 title_circle resume__title">Опыт</div>-->
-<!--      <h2 class="title title_fz36">Чем я буду полезeн</h2>-->
-<!--      <span class="title__divider title__divider_center"> </span></div>-->
-<!--    <div class="resume__wrapper">-->
-<!--      <div class="resume__column">-->
-<!--        <h3 class="title title_fz20 resume__column-title">Образование</h3>-->
-<!--        <ul>-->
-<!--          <li>-->
-<!--            <div class="resume__item">-->
-<!--              <div class="resume__item-head">-->
-<!--                <div class="resume__item-icon">-->
-<!--                  <img src="icons/experience/university.svg" alt="university">-->
-<!--                </div>-->
-<!--                <div class="resume__item-head-text">-->
-<!--                  <h4 class="title title_fz14">МГТУ им. Н. Э. Баумана</h4>-->
-<!--                  <div class="resume__item-location">Диплом магистра | Москва (2014-2020)</div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod-->
-<!--                tempor-->
-<!--                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                sed-->
-<!--                do eiusmo.-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="resume__item">-->
-<!--              <div class="resume__item-head">-->
-<!--                <div class="resume__item-icon">-->
-<!--                  <img src="icons/experience/courses.svg" alt="university">-->
-<!--                </div>-->
-<!--                <div class="resume__item-head-text">-->
-<!--                  <h4 class="title title_fz14">Udemy</h4>-->
-<!--                  <div class="resume__item-location">Курсы по Web-разработке</div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod-->
-<!--                tempor-->
-<!--                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                sed-->
-<!--                do eiusmo.-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--      <div class="resume__column">-->
-<!--        <h3 class="title title_fz20 resume__column-title">Опыт работы</h3>-->
-<!--        <ul>-->
-<!--          <li>-->
-<!--            <div class="resume__item">-->
-<!--              <div class="resume__item-head">-->
-<!--                <div class="resume__item-icon">-->
-<!--                  <img src="icons/experience/developer.svg" alt="university">-->
-<!--                </div>-->
-<!--                <div class="resume__item-head-text">-->
-<!--                  <h4 class="title title_fz14">Front-End Developer</h4>-->
-<!--                  <div class="resume__item-location">EPAM | Москва (2018-2019)</div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod-->
-<!--                tempor-->
-<!--                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                sed-->
-<!--                do eiusmo.-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="resume__item">-->
-<!--              <div class="resume__item-head">-->
-<!--                <div class="resume__item-icon">-->
-<!--                  <img src="icons/experience/designer.svg" alt="university">-->
-<!--                </div>-->
-<!--                <div class="resume__item-head-text">-->
-<!--                  <h4 class="title title_fz14">UI/UX Designer</h4>-->
-<!--                  <div class="resume__item-location">Squad Team | Москва (2018)</div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod-->
-<!--                tempor-->
-<!--                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                sed-->
-<!--                do eiusmo.-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--<section class="skills">-->
-<!--  <div class="container">-->
-<!--    <div class="skills__header">-->
-<!--      <div class="title title_fz16 title_circle resume__title">Навыки</div>-->
-<!--      <h2 class="title title_fz36">Что я использую в работе</h2>-->
-<!--      <span class="title__divider title__divider_center"> </span></div>-->
-<!--    <div class="skills__items">-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/js.svg" alt="js">-->
-<!--        <div class="skills__item-title">JAVACRIPT</div>-->
-<!--      </div>-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/tyoescruipt.svg" alt="js">-->
-<!--        <div class="skills__item-title">typescript</div>-->
-<!--      </div>-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/html5.svg" alt="html5">-->
-<!--        <div class="skills__item-title">html5</div>-->
-<!--      </div>-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/sass.svg" alt="sass">-->
-<!--        <div class="skills__item-title">sass</div>-->
-<!--      </div>-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/css3.svg" alt="css3">-->
-<!--        <div class="skills__item-title">css3</div>-->
-<!--      </div>-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/jest.svg" alt="jest">-->
-<!--        <div class="skills__item-title">jest</div>-->
-<!--      </div>-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/redux.svg" alt="redux">-->
-<!--        <div class="skills__item-title">redux</div>-->
-<!--      </div>-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/git.svg" alt="git">-->
-<!--        <div class="skills__item-title">git</div>-->
-<!--      </div>-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/styled.svg" alt="Styled Components">-->
-<!--        <div class="skills__item-title">Styled Component</div>-->
-<!--      </div>-->
-<!--      <div class="skills__item">-->
-<!--        <img class="skills__item-img" src="icons/skills/react.svg" alt="react">-->
-<!--        <div class="skills__item-title">react</div>-->
-<!--      </div>-->
+<section class="resume">
+  <div class="container">
+    <div class="resume__header">
+      <div class="title title_fz16 title_circle resume__title">Опыт</div>
+      <h2 class="title title_fz36">Чем я буду полезeн</h2>
+      <span class="title__divider title__divider_center"> </span></div>
+    <div class="resume__wrapper">
+      <div class="resume__column">
+        <h3 class="title title_fz20 resume__column-title">Образование</h3>
+        <ul>
+          <li>
+            <div class="resume__item">
+              <div class="resume__item-head">
+                <div class="resume__item-icon">
+                  <img src="icons/experience/university.svg" alt="university">
+                </div>
+                <div class="resume__item-head-text">
+                  <h4 class="title title_fz14">МГТУ им. Н. Э. Баумана</h4>
+                  <div class="resume__item-location">Диплом магистра | Москва (2014-2020)</div>
+                </div>
+              </div>
+              <div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed
+                do eiusmo.
+              </div>
+            </div>
+            <div class="resume__item">
+              <div class="resume__item-head">
+                <div class="resume__item-icon">
+                  <img src="icons/experience/courses.svg" alt="university">
+                </div>
+                <div class="resume__item-head-text">
+                  <h4 class="title title_fz14">Udemy</h4>
+                  <div class="resume__item-location">Курсы по Web-разработке</div>
+                </div>
+              </div>
+              <div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed
+                do eiusmo.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="resume__column">
+        <h3 class="title title_fz20 resume__column-title">Опыт работы</h3>
+        <ul>
+          <li>
+            <div class="resume__item">
+              <div class="resume__item-head">
+                <div class="resume__item-icon">
+                  <img src="icons/experience/developer.svg" alt="university">
+                </div>
+                <div class="resume__item-head-text">
+                  <h4 class="title title_fz14">Front-End Developer</h4>
+                  <div class="resume__item-location">EPAM | Москва (2018-2019)</div>
+                </div>
+              </div>
+              <div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed
+                do eiusmo.
+              </div>
+            </div>
+            <div class="resume__item">
+              <div class="resume__item-head">
+                <div class="resume__item-icon">
+                  <img src="icons/experience/designer.svg" alt="university">
+                </div>
+                <div class="resume__item-head-text">
+                  <h4 class="title title_fz14">UI/UX Designer</h4>
+                  <div class="resume__item-location">Squad Team | Москва (2018)</div>
+                </div>
+              </div>
+              <div class="resume__item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed
+                do eiusmo.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="skills">
+  <div class="container">
+    <div class="skills__header">
+      <div class="title title_fz16 title_circle resume__title">Навыки</div>
+      <h2 class="title title_fz36">Что я использую в работе</h2>
+      <span class="title__divider title__divider_center"> </span></div>
+    <div class="skills__items">
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/js.svg" alt="js">
+        <div class="skills__item-title">JAVACRIPT</div>
+      </div>
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/tyoescruipt.svg" alt="js">
+        <div class="skills__item-title">typescript</div>
+      </div>
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/html5.svg" alt="html5">
+        <div class="skills__item-title">html5</div>
+      </div>
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/sass.svg" alt="sass">
+        <div class="skills__item-title">sass</div>
+      </div>
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/css3.svg" alt="css3">
+        <div class="skills__item-title">css3</div>
+      </div>
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/jest.svg" alt="jest">
+        <div class="skills__item-title">jest</div>
+      </div>
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/redux.svg" alt="redux">
+        <div class="skills__item-title">redux</div>
+      </div>
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/git.svg" alt="git">
+        <div class="skills__item-title">git</div>
+      </div>
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/styled.svg" alt="Styled Components">
+        <div class="skills__item-title">Styled Component</div>
+      </div>
+      <div class="skills__item">
+        <img class="skills__item-img" src="icons/skills/react.svg" alt="react">
+        <div class="skills__item-title">react</div>
+      </div>
 
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
+    </div>
+  </div>
+</section>
 <!--<div class="competency">-->
 <!--  <div class="container">-->
 <!--    <div class="competency__items">-->
