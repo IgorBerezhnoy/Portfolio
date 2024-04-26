@@ -34,3 +34,10 @@
   }
   
 }
+.black{
+  color: #312f2f;
+  border: 2px solid  #312f2f;
+  &:hover{
+	color: #312f2f;
+  }
+}
